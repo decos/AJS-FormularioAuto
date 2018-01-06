@@ -27,3 +27,12 @@ Error Message Resolver (Mensajes Personzalizados)
 6. Añadir mensajes Personzalizados
     - En el controlador principal añadir al modulo los mensajes Personzalizados
     - Añadir a los `inputs` los mensajes personalizados usando las directivas `ng-min-err-type` y `ng-max-err-type`
+
+## Cambiando la cultura del autovalidado
+
+1. Añadir el fichero dentro del directorio `js/lib`
+    - js/lib/jcs-auto-validate_es-co.json
+
+2. Añadir las siguientes lineas dentro del manejador de errores:
+    - defaultErrorMessageResolver.setI18nFileRootPath('js/lib');
+    - defaultErrorMessageResolver.setCulture('es-CO');
